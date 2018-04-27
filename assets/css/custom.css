@@ -1,0 +1,638 @@
+/* COLOUR REFERENCES
+
+Green:		#79b044
+Salmon:		#dd5638
+Blue Gray:  #3e4249
+
+*/
+
+/* ==== GENERAL ==== */
+
+body {
+	/* margin: 50px 0 0 0; */
+	margin:0;
+	padding: 0;
+	font-family: 'proxima-nova','Raleway','Helevetica','sans-serif';
+	font-size: 16px;
+	background: transparent;
+	background: url('../img/background.png') repeat;
+	
+	
+	
+}
+
+/* ==== GLOBAL ======= */
+
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h1,h2 {
+	margin: 0 0 40px;
+}
+
+h3 {
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p.lead {
+	font-weight: normal;
+}
+
+p {
+	margin: 0 0 15px;
+    color: #fff;
+}
+
+a:link, a:visited {
+	color: #dd5638;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #c9302c;
+}
+
+blockquote {
+	padding: 0;
+	border: none;
+	font-style: italic;
+	text-align: left;
+}
+
+blockquote cite {
+	display: block;
+	color: #777;
+	margin: 15px 0 0 0;
+}
+
+blockquote:before {
+	display: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+button, input, .btn, a.btn {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	
+}
+
+.btn {
+	font-weight: bold;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn-success {
+	background: #79b044;
+	border: none;
+}
+
+.btn-success:hover {
+	background: #6a9b3d;
+	border-color: #6a9b3d;
+}
+
+.btn-danger {
+	background-color: #dd5638;
+	border-color: #d95131;
+}
+
+.text-danger, li.text-danger a {
+	color: #dd5638;
+}
+
+a.text-danger:hover {
+	color: #e55939;
+}
+
+.modal-content{
+	background: url('../img/tile.jpg') top left repeat;
+}
+
+.badge.social {
+	background: #ccc;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 42px;
+	margin: 0 5px 20px 0;
+	padding: 0;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+}
+
+.badge.social.twitter:hover {
+	background: #55acee;
+}
+
+.badge.social.facebook:hover {
+	background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+	background: #db4b39;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* === CUSTOM ICON SPRITES === */
+
+i.ci {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: url('../img/icon-sprite.png') no-repeat;
+}
+
+.ci.ci-computer 	{ background-position: 0 0; }
+.ci.ci-watch		{ background-position: -40px 0; }
+.ci.ci-calendar		{ background-position: -80px 0; }
+.ci.ci-community	{ background-position: -120px 0; }
+.ci.ci-instructor	{ background-position: -160px 0; }
+.ci.ci-device		{ background-position: -200px 0; }
+
+/* ==== FORMS ==== */
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+{
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	border-radius: 3px;
+	display: block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 180%;
+	padding: 6px 5px;
+	background: transparent;
+	background-position: center;
+	margin-left: 10px;
+}
+
+.kontakt-forma input[type="text"],
+.kontakt-forma input[type="email"],
+input[type="submit"]
+ {
+	min-height: 70px;
+	max-width: 550px;
+    display: block;
+    padding: 20px 30px;
+    border: 0;
+    font-size: 18px;
+	color: white;
+	background: url('../img/input-border.png') no-repeat ;
+	color: white;
+
+}
+form textarea {
+	border: 0;
+}
+.kontakt-forma .input-frame{
+	
+	padding-left: 5px;
+}
+button[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: none;
+	border-radius: 6px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+	outline: none;
+	border: none;
+	background: #aaa;
+}
+
+form.search-form .form-group {
+	margin: 0;
+}
+
+form.search-form .input-group {
+	width: 100%;
+}
+
+form.search-form .input-group input[type="search"],
+form.search-form .input-group input[type="text"] {
+	width: 70%;
+}
+
+form.search-form .input-group input[type="submit"] {
+	width: 30%;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	
+}
+
+.kontakt-forma textarea {
+	width: 100%;
+	border: 0;
+	min-height: 150px;
+	background: url('../img/textarea-frame.png') no-repeat ;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+section{
+
+	min-height: 200px;
+	width: 100%;
+    margin-bottom: 10px;
+    padding: 40px 5px 0;
+}
+
+.line {
+	width: 100%;
+}
+
+.title-text  {
+	font-size: 25px;
+	line-height:1.5;
+	margin: 0 0 1em 0;
+}
+
+
+/* ======== HEADER ========= */
+
+/* header {
+	height: 150px;
+	width: 100%;
+    background: url('../img/bg-header.png') no-repeat;
+    background-size: cover ;
+	display: flex;
+	position: absolute;
+	top: 0;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+ .header ul .active {
+	color: orangered;
+}
+
+.header ul li {
+	color: #000;
+}
+
+.navbar-collapse {
+	float: right;
+}
+
+
+.navbar-toggle{
+    bacground:#333;
+}
+
+.icon-bar{
+    background: blue;
+}
+
+
+/* ==== FIRST BANER ========= */
+.first-baner {
+	height: 1px;
+}
+.first-baner{
+	margin-top: 20px;
+	padding-top: 30px;
+	position: relative;
+}
+
+.first-baner .container {
+   min-height: 20px;
+   background: blue;
+}
+
+ #kastanjete{
+	position: absolute;
+	top: 0;
+    left: 20px;
+}
+
+#djevrek {
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+
+#polyglotte {
+	display: block;
+  position: absolute;
+  top: 400px;
+  z-index: 1000;
+ 
+}
+#koliko-jezika {
+	display: block;
+	margin-top: 80px;
+	margin-left: 300px;
+}
+
+/* ==== second-banner ========= */
+#second-banner{
+	min-height: 400px;
+	
+}
+/* ==== NOTEBOOK ========= */
+#bg-notebook {
+	background: url('../img/rokovnik.png') no-repeat;
+	min-height: 700px;
+	position: relative;
+	
+}
+
+#notebook-left-content {
+	max-width: 380px;
+	margin-left: 80px;
+	margin-top: 80px;
+	font-size: 1.2em;
+}
+#notebook-left-content p {
+	color: #000;
+}
+#notebook-left-content .text-excerpt {
+	color: red;
+	font-size: 1.2em;
+	font-weight: initial;
+}
+
+#pariz-razgledinica {
+	position: absolute;
+	top:70px;
+	left: 200px;
+}
+
+#kompas {
+	position: absolute;
+	top: -70px;
+	left: 100px;
+}
+
+/* ==== NOTEBOOK ========= */
+#board {
+	min-height: 800px;
+}
+#board .container {
+	position: relative;
+}
+
+#board::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#board .container img:nth-child(2){
+
+	margin-left: 50px;
+}
+
+#board img {
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bg-dashboard {
+	margin-top: -20px;
+	margin-left: 71px;
+	height: 880px;
+	z-index: -3;
+
+}
+
+#list-table {
+	background: url('../img/list-tabla.png') no-repeat;
+	top: 530px;
+	left: 80px;
+	height: 800px;
+	position: absolute;
+	
+	
+}
+#list-table p {
+	color: #000;
+}
+
+#board .board-text {
+	
+	padding: 40px;
+	margin: 30px;
+	font-size: 16px;
+    line-height: 1.5;
+}
+#flags {
+	margin-top: 117px;
+}
+
+#zelis-nauciti {
+	left: 20%;
+	padding-top: 30px;
+}
+
+
+/* === CONTACT - HOME ===  */
+#contact {
+	margin-top: 80px;
+}
+#contact .container {
+	background: url('../img/pisamce.png') no-repeat;
+
+	min-height: 600px;
+	position: relative;
+}
+#contact .form-content{
+	margin-top: 40px;
+	margin-left: 130px;
+}
+#contact form {
+	max-width: 400px;
+	color: #000;
+	font-size: 16px;
+}
+
+#contact textarea{
+	min-height: 200px;
+	border: 2px soli #ccc;;
+	color: #000;
+	font-size: 16px;
+}
+
+.javite-se {
+	margin-top: -90px;
+	margin-left: 35%;
+}
+
+
+/* === KONTAKT PAGE ==== */
+   .form-group label {
+	   color: orange;
+	   font-size: 20px;
+   }
+
+   .info{
+	   color: #fff;
+   }
+   .info a {
+	   color: #ffc926;
+   }
+
+   .info-section {
+	   padding: 20px 10px;
+	   margin-left: 5px;
+   }
+/* ====  FOOTER ===== */
+footer {
+    height: 150px;
+    background: url('../img/footer.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    width: 100%
+
+}
+
+
+/* === KONTAKT ======= */
+
+.kontakt-baner{
+    display: block;
+    width: 100%;
+	margin: 0px 0 5px;
+	padding-top: 0px;
+}
+
+.baner-thubnail-img {
+	display: block;
+    width: 100%;
+	margin: 20px 0 5px;
+	padding-top: 50px;
+}
+
+
+.first-banner .container h1 {
+	display: block;
+	color: #fff;
+	text-align: center
+	font-size:80px;
+}
+/* ==== OFFER PAGE ========= */
+
+#offer  .offer-content{
+	margin:50px 20px 0;
+	padding: 5px;
+	
+}
+.thumb-offer {
+	background: blue;
+	height: 300px;
+	float: left;
+	width: 30%;
+}
+
+.text-offer {
+	font-size: 20px;
+	padding: 20px 5px;
+	float: left;
+	width: 70%;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+@media screen and (max-width : 991px) {
+
+}
+
+@media screen and (max-width : 798px) {
+	#bg-dashboard {
+		height: 800px;
+	}
+    #pariz-razgledinica{
+		left: 80px;
+		float: right;
+		position: inherit;
+	}
+	#kompas{
+	   display: none;
+	}
+	#contact input {
+		
+	}
+
+	#bg-dashboard {
+		height: 880px;
+	}
+
+	#list-table {
+		top: 480px;
+		left: 70px;
+	}
+
+}
+@media screen and (max-width : 568px) {
+	#pariz-razgledinica{
+		display: none;
+	}
+	#contact form {
+		width: 300px;
+	}
+
+	#contact form {
+		display: block;
+		position: absolute;
+		left: 30%;
+	}
+
+	#list-table {
+		top: 380px;
+		left: 20px;
+	}
+} 	 
